@@ -1,0 +1,22 @@
+.choice {
+    /*
+    transition: border 1.5s ease, box-shadow 1.5 ease;
+    transition: all 1.5s ease-in-out;
+    */
+    transition: box-shadow 1s ease-in-out, border 1s ease, background-color 1s ease;
+    cursor: pointer;
+}
+.choice.green-glow{
+    border: 4px solid #4dcc7d; 
+    box-shadow: 0 0 10px #31b43a;
+}
+
+.choice.red-glow{
+    border: 4px solid #fc121b; 
+    box-shadow: 0 0 10px #d01115;
+}
+
+.choice.dark-glow{
+    border: 4px solid #464647; 
+    box-shadow: 0 0 10px #25292b;
+}

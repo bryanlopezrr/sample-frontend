@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+
   <title>Hello, rock-paper-scissors!</title>
-  <link rel="stylesheet" href="./css/styles.css">
+
+
+  <!--We have JS code that will dynamically change this tag to Luigi-->
   <link rel="shortcut icon" href="./images/mario.png">
-  <script type="text/javascript" src="./js/app.js"></script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
@@ -13,11 +16,12 @@
 
 <body>
   <header>
-    Rock-Paper-Scissors<span >
-      <img class="marioheader" src="images/mario.png">
-      </span> 
+    Rock Paper Scissors
+    <span >
+      <img id="character" class="characterHeader">
+    </span> 
   
-    </header>
+  </header>
   
   <div class="scoreboard">
     <div id="user-label" class="badge">user</div>
@@ -27,16 +31,21 @@
 
   <div class="result">
     <p>
-      Welcome to Rock - Paper - Scissors : 
+      Welcome to Rock - Paper - Scissors
     </p>
 
   </div>
 
   <div class="choices">
-    <div class="choice" id="r"><img src="images/rock.png"></div>
-    <div class="choice" id="p"><img src="images/paper.png"></div>
-    <div class="choice" id="s"><img src="images/scissors.png"></div>
-
+    <div title="Rock" id="r" class="choice">
+      <img src="./images/rock.png">
+    </div>
+    <div title="Paper" id="p" class="choice">
+      <img src="./images/paper.png">
+    </div>
+    <div title="Scissors" id="s" class="choice">
+      <img src="./images/scissors.png">
+    </div>
   </div>
 
   <div id="action-message">

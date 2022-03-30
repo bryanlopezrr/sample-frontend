@@ -1,0 +1,40 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "This is going to be my rock-paper-scissors project that I will practice and work on multiple technologies with. Its meant to be trivial at first but get complex with time",
+  "main": "index.js",
+  "scripts": {
+    "build":        "npm run mario && npm run luigi",
+    "build:dev":    "npm run mario:dev && npm run luigi:dev",
+    "luigi":        "webpack --env character=luigi --env production",
+    "mario":        "webpack --env production",
+    "luigi:dev":    "webpack --env character=luigi",
+    "mario:dev":    "webpack",
+    "start":        "webpack serve",
+    "start:luigi":  "webpack serve --env character=luigi",    
+    "clean":        "tsc --build --clean",
+    "analyze":      "source-map-explorer './build/mario/index.main.*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanlopezrr/rock-paper-scissors.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bryanlopezrr/rock-paper-scissors/issues"
+  },
+  "homepage": "https://github.com/bryanlopezrr/rock-paper-scissors#readme",
+  "devDependencies": {
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "source-map-explorer": "^2.5.2",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}

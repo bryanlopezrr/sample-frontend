@@ -1,0 +1,1 @@
+type stringRps = 'R' | 'P' | 'S'
