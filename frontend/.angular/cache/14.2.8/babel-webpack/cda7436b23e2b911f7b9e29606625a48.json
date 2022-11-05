@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const environment = {\n  production: true,\n  title: 'Local PROD Environment Variable',\n  apiURL: 'http://url will go here'\n};","map":null,"metadata":{},"sourceType":"module"}

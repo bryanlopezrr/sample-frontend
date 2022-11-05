@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Hello, rock-paper-scissors!</title>
+
+
+  <!--We have JS code that will dynamically change this tag to Luigi-->
+  <link rel="shortcut icon" href="./images/mario.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+</head>
+
+<body>
+  <header>
+    Rock Paper Scissors
+    <span >
+      <img id="character" class="characterHeader">
+    </span> 
+    <button style="padding:10px; border-radius:10px; color: white; margin:10px; background-color:#E981EF;"
+      onclick="getBackend()">
+      Contact backend!
+    </button>
+  </header>
+  
+  <div class="scoreboard">
+    <div id="user-label" class="badge">user</div>
+    <div id="comp-label" class="badge">comp</div>
+    <span id="user-score">0</span> : <span id="comp-score">0</span><!---spans are inline, divs are block level -->
+  </div>
+
+  <div class="result">
+    <p>
+      Welcome to Rock - Paper - Scissors
+    </p>
+
+  </div>
+
+  <div class="choices">
+    <div title="Rock" id="r" class="choice">
+      <img src="./images/rock.png">
+    </div>
+    <div title="Paper" id="p" class="choice">
+      <img src="./images/paper.png">
+    </div>
+    <div title="Scissors" id="s" class="choice">
+      <img src="./images/scissors.png">
+    </div>
+  </div>
+
+  <div id="action-message">
+    Make your move!
+  </div>
+</body>
+
+<footer>
+  <p>Author: Bryan Lopez</p>
+  <p>03.26.2022</p>
+  <p><a href="mailto:bryanlopezrr@gmail.com">bryanloepzrr@gmail.com</a></p>
+</footer>
+
+</html>
